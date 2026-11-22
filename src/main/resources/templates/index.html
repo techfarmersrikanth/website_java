@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>DevOps Learning Hub</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+
+<header>
+    <h1>DevOps Learning Hub</h1>
+    <p>Learn Java, DevOps and Cloud Technologies</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#about">About</a>
+</nav>
+
+<section class="hero">
+    <h2>Welcome to DevOps Learning</h2>
+    <p>Build your skills with practical projects.</p>
+    <a href="#courses" class="btn">Explore Courses</a>
+</section>
+
+<section id="courses">
+    <h2>Our Courses</h2>
+
+    <div class="course-container">
+        <div class="course"
+             th:each="course : ${courses}">
+            <h3 th:text="${course}"></h3>
+            <p>Learn concepts with practical examples.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Learn Java development, CI/CD automation,
+        containerization and cloud technologies.
+    </p>
+</section>
+
+<footer>
+    <p>DevOps Learning Hub | 2026</p>
+</footer>
+
+</body>
+</html>
