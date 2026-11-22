@@ -59,7 +59,7 @@
 
     <!-- Build Configuration -->
     <build>
-        <finalName>devops-learning</finalName>
+    <!--    <finalName>devops-learning</finalName> -->
 
         <plugins>
 
